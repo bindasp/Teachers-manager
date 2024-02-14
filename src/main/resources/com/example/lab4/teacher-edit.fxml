@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.frontend.TeacherEditController">
+   <children>
+      <TextField fx:id="firstNameField" layoutX="224.0" layoutY="46.0" promptText="Imię" />
+      <TextField fx:id="lastNameField" layoutX="226.0" layoutY="99.0" promptText="Nazwisko" />
+      <TextField fx:id="ageField" layoutX="226.0" layoutY="144.0" promptText="Rok urodzenia" />
+      <TextField fx:id="salaryField" layoutX="228.0" layoutY="200.0" promptText="Wynagrodzenie" />
+      <ComboBox fx:id="conditionComboBox" layoutX="225.0" layoutY="248.0" prefWidth="150.0" promptText="Stan" />
+      <Button fx:id="save" layoutX="224.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#saveChanges" prefHeight="25.0" prefWidth="150.0" text="Zapisz zmiany" />
+   </children>
+</AnchorPane>

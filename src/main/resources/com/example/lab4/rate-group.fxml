@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="342.0" prefWidth="216.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.frontend.RateGroupController">
+   <children>
+      <SplitMenuButton fx:id="rates" layoutX="21.0" layoutY="77.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="174.0" text="Wybierz ocenę">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <TextField fx:id="comment" layoutX="21.0" layoutY="199.0" prefHeight="44.0" prefWidth="174.0" promptText="Dodaj komentarz" />
+      <Button fx:id="save" layoutX="21.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#saveRate" prefHeight="25.0" prefWidth="174.0" text="Zapisz" />
+   </children>
+</AnchorPane>

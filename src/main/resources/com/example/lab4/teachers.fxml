@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.frontend.TeachersController">
+   <children>
+      <TableView id="table" fx:id="table" layoutX="45.0" layoutY="20.0" prefHeight="321.0" prefWidth="580.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columns>
+            
+          <TableColumn id="firstName" fx:id="firstName" prefWidth="63.0" text="Imię" />
+          <TableColumn id="name" fx:id="name" prefWidth="81.0" text="Nazwisko" />
+            <TableColumn id="salary" fx:id="salary" prefWidth="123.0" text="Wynagrodzenie [zł]" />
+            <TableColumn id="age" fx:id="age" minWidth="0.0" prefWidth="117.0" text="Rok Urodzenia" />
+            <TableColumn fx:id="condition" prefWidth="99.0" text="Stan" />
+            <TableColumn fx:id="className" prefWidth="95.0" text="Grupa" />
+        </columns>
+      </TableView>
+      <Button fx:id="addTeacher" layoutX="459.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#addTeacher" prefHeight="25.0" prefWidth="62.0" text="dodaj" />
+      <Button fx:id="remove" layoutX="538.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#removeTeacher" prefHeight="25.0" prefWidth="62.0" text="usuń" />
+      <TextField fx:id="nameT" layoutX="20.0" layoutY="357.0" prefHeight="25.0" prefWidth="101.0" promptText="Imię" />
+      <TextField fx:id="lastNameT" layoutX="125.0" layoutY="357.0" prefHeight="25.0" prefWidth="101.0" promptText="Nazwisko" />
+      <TextField fx:id="salaryT" layoutX="20.0" layoutY="394.0" prefHeight="25.0" prefWidth="101.0" promptText="Wynagrodzenie" />
+      <TextField fx:id="ageT" layoutX="234.0" layoutY="357.0" prefHeight="25.0" prefWidth="101.0" promptText="Rok Urodzenia" />
+      <SplitMenuButton fx:id="groupT" layoutX="234.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Grupa">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Button fx:id="back" layoutX="538.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#backToMenu" prefHeight="25.0" prefWidth="62.0" text="powrót" />
+      <SplitMenuButton fx:id="conditionT" layoutX="125.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Stan">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Button fx:id="edit" layoutX="459.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#editTeacher" prefHeight="25.0" prefWidth="62.0" text="edytuj" />
+      <TextField fx:id="searchPartial" layoutX="346.0" layoutY="394.0" onKeyPressed="#searchPartial" prefHeight="25.0" prefWidth="94.0" promptText="Szukaj" />
+      <Button fx:id="export" layoutX="346.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#exportTable" prefHeight="25.0" prefWidth="94.0" text="eksportuj" />
+   </children>
+</AnchorPane>

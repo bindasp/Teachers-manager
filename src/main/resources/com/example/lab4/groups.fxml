@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="451.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.frontend.GroupsController">
+   <children>
+      <Button fx:id="add" layoutX="267.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#addGroup" prefHeight="25.0" prefWidth="87.0" text="dodaj" />
+      <TableView fx:id="table" layoutX="31.0" layoutY="20.0" prefHeight="335.0" prefWidth="559.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+        <columns>
+          <TableColumn fx:id="group" prefWidth="268.0" text="Grupa" />
+          <TableColumn fx:id="capability" minWidth="0.0" prefWidth="181.0" text="Pojemność" />
+            <TableColumn fx:id="rateColumn" prefWidth="109.0" text="Ocena" />
+        </columns>
+      </TableView>
+      <TextField fx:id="name" layoutX="31.0" layoutY="371.0" prefHeight="25.0" prefWidth="103.0" promptText="Nazwa grupy" />
+      <TextField fx:id="count" layoutX="148.0" layoutY="371.0" prefHeight="25.0" prefWidth="103.0" promptText="Pojemność" />
+      <Button fx:id="remove" layoutX="386.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#removeGroup" prefHeight="25.0" prefWidth="87.0" text="usuń" />
+      <Button fx:id="back" layoutX="503.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="25.0" prefWidth="87.0" text="powrót" />
+      <Button fx:id="show" layoutX="386.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#showGroup" prefHeight="18.0" prefWidth="87.0" text="wyświetl" />
+      <Button fx:id="rate" layoutX="31.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#rateGroup" prefHeight="25.0" prefWidth="322.0" text="Oceń grupę" />
+      <Button fx:id="export" layoutX="503.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#exportTable" prefHeight="25.0" prefWidth="87.0" text="eksportuj" />
+   </children>
+</AnchorPane>
